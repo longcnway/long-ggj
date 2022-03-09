@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:rolling="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_black"
+        android:paddingTop="6dp">
+
+        <ImageView
+            android:id="@+id/ivGuanggao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingStart="16dp"
+            android:src="@drawable/icon_broadcast"
+            app:layout_constraintBottom_toBottomOf="@id/mRlllinglayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/mRlllinglayout" />
+
+        <com.jkb.rollinglayout.RollingLayout
+            android:id="@+id/mRlllinglayout"
+            android:layout_width="0dp"
+            android:layout_height="15dp"
+            android:layout_marginEnd="15dp"
+            android:paddingEnd="10dp"
+            app:layout_constraintLeft_toRightOf="@id/ivGuanggao"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            rolling:rolling_eachTime="4000"
+            rolling:rolling_orientation="rightLeft"
+            rolling:rolling_pause="4500" />
+
+        <View
+            android:id="@+id/vLineFirst"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="13dp"
+            android:background="@color/color_141623"
+            app:layout_constraintTop_toBottomOf="@id/mRlllinglayout"></View>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/consLayoutAllProfit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="13dp"
+            android:background="@drawable/shape_rect_radius5_color141623"
+            android:padding="17dp"
+            app:layout_constraintTop_toBottomOf="@id/vLineFirst">
+
+            <TextView
+                android:id="@+id/tvProfit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_all_profit"
+                android:textColor="@color/color_80ffffff"
+                android:textSize="12sp"
+                tools:ignore="MissingConstraints"></TextView>
+
+            <TextView
+                android:id="@+id/tvProfitVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:includeFontPadding="false"
+                android:textColor="@color/white"
+                android:textSize="29sp"
+                app:layout_constraintTop_toBottomOf="@id/tvProfit"
+                tools:ignore="MissingConstraints"
+                tools:text="1200">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvProfitToday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_profit_today"
+                android:textColor="@color/color_80ffffff"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvProfit"></TextView>
+
+            <TextView
+                android:id="@+id/tvProfitTodayVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:text="@string/txt_profit_today"
+                android:textColor="@color/color_ff383b"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvProfitToday">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvAllTickets"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:text="@string/txt_all_tickets"
+                android:textColor="@color/color_80ffffff"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@id/vdividerFirst"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvProfitVal">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvAllTicketsVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/tvAllTickets"
+                tools:ignore="MissingConstraints"
+                tools:text="10231"></TextView>
+
+            <View
+                android:id="@+id/vdividerFirst"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="35dp"
+                android:background="@color/color_33ffffff"
+                app:layout_constraintBottom_toBottomOf="@id/tvAllTicketsVal"
+                app:layout_constraintEnd_toStartOf="@id/tvAllPointNum"
+                app:layout_constraintStart_toEndOf="@id/tvAllTickets"
+                app:layout_constraintTop_toTopOf="@id/tvAllTickets"></View>
+
+            <TextView
+                android:id="@+id/tvAllPointNum"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:text="@string/txt_all_point_num"
+                android:textColor="@color/color_80ffffff"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@id/vdividerSecond"
+                app:layout_constraintStart_toEndOf="@id/vdividerFirst"
+                app:layout_constraintTop_toBottomOf="@id/tvProfitVal">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvAllPointNumVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="@id/tvAllPointNum"
+                app:layout_constraintTop_toBottomOf="@id/tvAllPointNum"
+                tools:text="10231"></TextView>
+
+            <View
+                android:id="@+id/vdividerSecond"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="35dp"
+                android:background="@color/color_33ffffff"
+                app:layout_constraintBottom_toBottomOf="@id/tvAllPointNumVal"
+                app:layout_constraintEnd_toStartOf="@id/tvTodayTicketsNum"
+                app:layout_constraintStart_toEndOf="@id/tvAllPointNum"
+                app:layout_constraintTop_toTopOf="@id/tvAllPointNum"></View>
+
+            <TextView
+                android:id="@+id/tvTodayTicketsNum"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:text="@string/txt_all_point_num"
+                android:textColor="@color/color_80ffffff"
+                android:textSize="12sp"
+                rolling:layout_constraintEnd_toEndOf="parent"
+                rolling:layout_constraintStart_toEndOf="@id/vdividerSecond"
+                rolling:layout_constraintTop_toBottomOf="@id/tvProfitVal">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvTodayTicketsNumVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                rolling:layout_constraintStart_toStartOf="@id/tvTodayTicketsNum"
+                rolling:layout_constraintTop_toBottomOf="@id/tvTodayTicketsNum"
+                tools:text="10231"></TextView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/consLayoutProfitPoint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="13dp"
+            android:background="@drawable/shape_rect_radius5_color1d1d2a_stroke_color141623"
+            android:paddingStart="15dp"
+            android:paddingTop="26dp"
+            android:paddingBottom="24dp"
+            rolling:layout_constraintTop_toBottomOf="@id/consLayoutAllProfit">
+
+            <TextView
+                android:id="@+id/tvMyAllProfit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:text="@string/txt_my_all_profit"
+                android:textColor="@color/color_80ffffff"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@id/tvMyAllProfitVal"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvMyAllProfitVal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:text="0（BZZ)"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toStartOf="@id/vdivider"
+                rolling:layout_constraintStart_toEndOf="@id/tvMyAllProfit"
+                tools:ignore="MissingConstraints"></TextView>
+
+            <View
+                android:id="@+id/vdivider"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="35dp"
+                android:background="@color/color_33ffffff"
+                app:layout_constraintBottom_toBottomOf="@id/tvMyAllProfitVal"
+                app:layout_constraintStart_toEndOf="@id/tvMyAllProfitVal"
+                app:layout_constraintTop_toTopOf="@id/tvMyAllProfitVal"
+                rolling:layout_constraintEnd_toStartOf="@id/tvMyPointNum"></View>
+
+            <TextView
+                android:id="@+id/tvMyPointNum"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:text="@string/txt_my_all_profit"
+                android:textColor="@color/color_80ffffff"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@id/tvMyPointNumVal"
+                rolling:layout_constraintStart_toEndOf="@id/vdivider"
+                tools:ignore="MissingConstraints">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvMyPointNumVal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:text="0"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvMyPointNum"
+                tools:ignore="MissingConstraints"></TextView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tvPointDetailTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="15dp"
+            android:drawableStart="@drawable/icon_point_detail"
+            android:drawablePadding="9dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="18dp"
+            android:text="@string/txt_point_detail"
+            android:textColor="@color/color_e3cdb9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/consLayoutProfitPoint">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvPointId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:gravity="center"
+            android:text="@string/txt_point_id"
+            android:textColor="@color/color_80ffffff"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@id/tvWorkStatus"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvPointDetailTitle"></TextView>
+
+        <TextView
+            android:id="@+id/tvWorkStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:gravity="center"
+            android:text="@string/txt_work_status"
+            android:textColor="@color/color_80ffffff"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@id/tvTicketsBook"
+            app:layout_constraintStart_toEndOf="@id/tvPointId"
+            app:layout_constraintTop_toBottomOf="@id/tvPointDetailTitle"></TextView>
+
+        <TextView
+            android:id="@+id/tvTicketsBook"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:gravity="center"
+            android:text="@string/txt_tickets_book"
+            android:textColor="@color/color_80ffffff"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@id/tvAllOut"
+            app:layout_constraintStart_toEndOf="@id/tvWorkStatus"
+            app:layout_constraintTop_toBottomOf="@id/tvPointDetailTitle"></TextView>
+
+        <TextView
+            android:id="@+id/tvAllOut"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:gravity="center"
+            android:text="@string/txt_tickets_book"
+            android:textColor="@color/color_80ffffff"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvTicketsBook"
+            app:layout_constraintTop_toBottomOf="@id/tvPointDetailTitle"></TextView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

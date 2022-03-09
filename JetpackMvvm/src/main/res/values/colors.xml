@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--紫色-->
+    <color name="color_a48ed1">#A48ED1</color>
+
+    <!-- 偶遇缘分 -->
+    <color name="color_FF9A97EF">#FF9A97EF</color>
+    <!--系统默认状态栏颜色-->
+    <color name="colorPrimary">#6895F4</color>
+    <!--公共标题颜色-->
+    <color name="public_title_text_color_black">#222222</color>
+
+    <!--白色-->
+    <color name="color_FFF6F6F9">#FFF6F6F9</color>
+    <color name="color_white">#FFFFFF</color>
+    <!--黑色-->
+    <color name="color_black">#000000</color>
+    <color name="color_6a6a6a">#6a6a6a</color>
+    <color name="color_FF000000">#FF000000</color>
+
+
+</resources>

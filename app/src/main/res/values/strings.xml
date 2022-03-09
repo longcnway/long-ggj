@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">读心术</string>
+
+    <!-- 登录、注册、忘记密码 -->
+    <string name="text_input_mobile">请输入手机号</string>
+    <string name="text_input_password">请输入密码</string>
+    <string name="text_forget_password">忘记密码</string>
+    <string name="text_forget_password1">忘记密码？</string>
+    <string name="text_register">注册账号</string>
+    <string name="text_welcome">欢迎使用</string>
+    <string name="text_mobile">手机号</string>
+    <string name="text_password">密码</string>
+    <string name="text_login">登录</string>
+    <string name="text_submit">提交</string>
+    <string name="text_get_code">获取</string>
+    <string name="text_input_code">请输入验证码</string>
+    <string name="text_code">验证码</string>
+    <string name="text_password_sure">再次输入</string>
+    <string name="text_input_password_tip_sure">请再次输入至少8个字符密码</string>
+    <string name="text_input_password_tip">请输入至少8个字符密码</string>
+    <string name="text_invite_code">邀请码</string>
+    <string name="text_input_invite_code">请输入邀请码</string>
+    <string name="text_register_agree">同意协议并注册</string>
+    <string name="text_read_agree">我已阅读并同意：</string>
+    <string name="text_service_agreement">服务协议</string>
+    <string name="text_register_account">注册账户</string>
+
+    <string name="text_invite_link">专属邀请链接</string>
+    <string name="text_invite_code_expert">专属邀请码</string>
+    <string name="text_copy">复制</string>
+    <string name="text_channel_name">渠道名称</string>
+    <string name="text_node_num">节点数</string>
+    <string name="text_end_time">到期时间</string>
+
+
+    <string name="txt_home">首页</string>
+    <string name="txt_mine">我的</string>
+    <string name="txt_all_profit">总收益</string>
+    <string name="txt_profit_today">今日收益</string>
+    <string name="txt_all_tickets">总票数</string>
+    <string name="txt_all_point_num">总节点数</string>
+    <string name="txt_my_all_profit">我的总收益</string>
+    <string name="txt_copy">复制</string>
+    <string name="txt_point_detail">节点明细</string>
+    <string name="txt_point_id">节点编号</string>
+    <string name="txt_work_status">工作状态</string>
+    <string name="txt_tickets_book">支票蒲</string>
+    <string name="txt_all_point">总节点</string>
+    <string name="txt_point_direct_sale">直营节点</string>
+    <string name="txt_channel_point">渠道节点</string>
+    <string name="txt_my_profit">我的收益（Bzz）</string>
+    <string name="txt_direct_sale_profit">直营收益</string>
+    <string name="txt_channel_profit">渠道收益</string>
+    <string name="txt_withdraw_coin">提币</string>
+    <string name="txt_channel_manage">渠道管理</string>
+    <string name="txt_point_hb">节点划拨</string>
+    <string name="txt_i_want_invite">我要邀请</string>
+    <string name="txt_wallet_ls">钱包流水</string>
+    <string name="txt_real_name_auth">实名认证</string>
+    <string name="txt_common_problem">常见问题</string>
+    <string name="txt_about_we">关于我们</string>
+
+    <string name="txt_game_tip">请你在心中想象一个两位数[比如：88]，用刚才想象的数字减去十位数与个位数之和的结果[例：88-(8+8)=72]，查找结果数字对应的符号，集中精力在此符号上停留3秒钟，传达你的意念给魔法球，然后点击中间的魔法球，见证奇迹的时刻到了......</string>
+</resources>

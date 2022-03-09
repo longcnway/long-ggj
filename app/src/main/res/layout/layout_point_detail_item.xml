@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="18dp"
+        android:paddingBottom="15dp">
+
+        <TextView
+            android:id="@+id/tvPointId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@id/tvCopy"
+            app:layout_constraintEnd_toStartOf="@id/tvWorkStatus"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tvCopy"
+            tools:text="12629"></TextView>
+
+        <TextView
+            android:id="@+id/tvWorkStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@id/tvCopy"
+            app:layout_constraintEnd_toStartOf="@id/tvCopy"
+            app:layout_constraintStart_toEndOf="@id/tvPointId"
+            app:layout_constraintTop_toTopOf="@id/tvCopy"
+            tools:text="12629"></TextView>
+
+        <TextView
+            android:id="@+id/tvCopy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_rect_radius3_color7355f5"
+            android:gravity="center"
+            android:paddingStart="20dp"
+            android:paddingTop="6dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="6dp"
+            android:text="@string/txt_copy"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toStartOf="@id/tvAllTicketsOut"
+            app:layout_constraintStart_toEndOf="@id/tvWorkStatus"></TextView>
+
+        <TextView
+            android:id="@+id/tvAllTicketsOut"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@id/tvCopy"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvCopy"
+            app:layout_constraintTop_toTopOf="@id/tvCopy"
+            tools:text="12629"></TextView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

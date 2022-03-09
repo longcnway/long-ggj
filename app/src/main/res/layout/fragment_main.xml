@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/color_black"
+        tools:context=".ui.activity.MainActivity">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/mainViewpager" />
+        <RadioGroup
+            android:id="@+id/rdgHome"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/color_141623"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbt_user_home_bottom1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/select_menu_home"
+                android:gravity="center"
+                android:drawablePadding="6dp"
+                android:padding="10dp"
+                android:text="@string/txt_home"
+                android:textColor="@drawable/select_menu_txt_color"
+                android:textSize="11sp" />
+
+            <RadioButton
+                android:id="@+id/rbt_user_home_bottom2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:drawableTop="@drawable/select_menu_mine"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/txt_mine"
+                android:textColor="@drawable/select_menu_txt_color"
+                android:textSize="11sp" />
+
+        </RadioGroup>
+    </LinearLayout>
+</layout>
