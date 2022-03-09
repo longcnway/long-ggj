@@ -33,7 +33,11 @@
     <string name="text_end_time">到期时间</string>
 
 
-    <string name="txt_home">首页</string>
+    <string name="txt_menu_1">首页</string>
+    <string name="txt_menu_2">账户查询</string>
+    <string name="txt_menu_3">业务办理</string>
+    <string name="txt_menu_4">社区</string>
+    <string name="txt_menu_5">个人中心</string>
     <string name="txt_mine">我的</string>
     <string name="txt_all_profit">总收益</string>
     <string name="txt_profit_today">今日收益</string>

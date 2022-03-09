@@ -30,4 +30,8 @@
     <color name="color_80141414">#80141414</color>
 
 
+    <color name="color_menu_bg">#EFEFEF</color>
+    <color name="color_menu_text_selected">#03A9F4</color>
+    <color name="color_menu_text">#353637</color>
+
 </resources>

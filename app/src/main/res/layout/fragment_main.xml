@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="@color/color_black"
+        android:background="@color/white"
         tools:context=".ui.activity.MainActivity">
 
         <androidx.viewpager2.widget.ViewPager2
@@ -23,7 +23,7 @@
             android:id="@+id/rdgHome"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:background="@color/color_141623"
+            android:background="@color/color_menu_bg"
             android:gravity="center"
             android:orientation="horizontal">
 
@@ -36,10 +36,10 @@
                 android:button="@null"
                 android:checked="true"
                 android:drawableTop="@drawable/select_menu_home"
-                android:gravity="center"
                 android:drawablePadding="6dp"
+                android:gravity="center"
                 android:padding="10dp"
-                android:text="@string/txt_home"
+                android:text="@string/txt_menu_1"
                 android:textColor="@drawable/select_menu_txt_color"
                 android:textSize="11sp" />
 
@@ -54,7 +54,52 @@
                 android:drawablePadding="6dp"
                 android:gravity="center"
                 android:padding="10dp"
-                android:text="@string/txt_mine"
+                android:text="@string/txt_menu_2"
+                android:textColor="@drawable/select_menu_txt_color"
+                android:textSize="11sp" />
+
+            <RadioButton
+                android:id="@+id/rbt_user_home_bottom3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:drawableTop="@drawable/select_menu_mine"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/txt_menu_3"
+                android:textColor="@drawable/select_menu_txt_color"
+                android:textSize="11sp" />
+
+            <RadioButton
+                android:id="@+id/rbt_user_home_bottom4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:drawableTop="@drawable/select_menu_mine"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/txt_menu_4"
+                android:textColor="@drawable/select_menu_txt_color"
+                android:textSize="11sp" />
+
+            <RadioButton
+                android:id="@+id/rbt_user_home_bottom5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:drawableTop="@drawable/select_menu_mine"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/txt_menu_5"
                 android:textColor="@drawable/select_menu_txt_color"
                 android:textSize="11sp" />
 
