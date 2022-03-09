@@ -33,7 +33,7 @@ import com.way.ore_power.app.widght.recyclerview.DefineLoadMoreView
 import com.way.ore_power.app.widght.viewpager.ScaleTransitionPagerTitleView
 import com.way.ore_power.data.model.bean.HomeTitleItem
 import com.way.ore_power.ui.fragment.HomeFragment
-import com.way.ore_power.ui.fragment.MeFragment
+import com.way.ore_power.ui.fragment.Menu5Fragment
 
 import me.hgj.jetpackmvvm.ext.util.toHtml
 import net.lucode.hackware.magicindicator.MagicIndicator
@@ -306,7 +306,7 @@ fun ViewPager2.initMain(fragment: Fragment): ViewPager2 {
                     HomeFragment()
                 }
                 1 -> {
-                    MeFragment()
+                    Menu5Fragment()
                 }
                 else -> {
                     HomeFragment()

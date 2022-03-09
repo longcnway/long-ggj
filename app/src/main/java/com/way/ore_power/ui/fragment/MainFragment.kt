@@ -18,10 +18,12 @@ class MainFragment : BaseFragment<MainViewModel,FragmentMainBinding>(){
         //初始化viewpager2
         mainViewpager.initMain(this)
         rdgHome.setOnCheckedChangeListener { radioGroup, checkedId ->
-            if (checkedId == R.id.rbt_user_home_bottom1) {
-                mainViewpager.currentItem = 0
-            } else if (checkedId == R.id.rbt_user_home_bottom2) {
-                mainViewpager.currentItem = 1
+            when (checkedId) {
+                R.id.rbt_user_home_bottom1 -> mainViewpager.currentItem = 0
+                R.id.rbt_user_home_bottom2 -> mainViewpager.currentItem = 1
+                R.id.rbt_user_home_bottom3 -> mainViewpager.currentItem = 2
+                R.id.rbt_user_home_bottom4 -> mainViewpager.currentItem = 3
+                R.id.rbt_user_home_bottom5 -> mainViewpager.currentItem = 4
             }
         }
     }
